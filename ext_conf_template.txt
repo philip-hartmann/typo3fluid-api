@@ -1,0 +1,5 @@
+# cat=Security; type=string; label=API URL segment: Default: /api/typo3fluid
+apiUrlSegment = /api/typo3fluid
+
+# cat=Security; type=string; label=API password
+apiPassword =

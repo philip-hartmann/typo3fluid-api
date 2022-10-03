@@ -1,0 +1,32 @@
+{
+	"name": "philip-hartmann/typo3fluid-api",
+	"description": "API to render TYPO3 Fluid templates or partials.",
+	"version": "0.1.0",
+	"type": "typo3-cms-extension",
+	"keywords": ["typo3", "extension"],
+	"homepage": "https://github.com/philip-hartmann/typo3fluid-api",
+	"license": [
+		"GPL-2.0-or-later"
+	],
+	"authors": [
+		{
+			"name": "Philip Hartmann",
+			"email": "hartm.philip@gmail.com",
+			"homepage": "https://github.com/philip-hartmann",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"typo3/cms-core": "^11.5"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "typo3fluid_api"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"PhilipHartmann\\TYPO3FluidApi\\": "Classes/"
+		}
+	}
+}
