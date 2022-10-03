@@ -24,12 +24,12 @@ The API accepts JSON requests and returns the response as JSON as well. The API 
 
 ```json
 {
-    'extension': '',
-    'template': '',
-    'partial': '',
-    'section': '',
-    'arguments': [],
-    'password': ''
+    "extension": "",
+    "template": "",
+    "partial": "",
+    "section": "",
+    "arguments": [],
+    "password": ""
 }
 ```
 
@@ -48,8 +48,8 @@ Either use `template` or `partial`.
 
 ```json
 {
-    'data': '',
-    'error' ''
+    "data": "",
+    "error": ""
 }
 ```
 
