@@ -27,6 +27,7 @@ The API accepts JSON requests and returns the response as JSON as well. The API 
     'extension': '',
     'template': '',
     'partial': '',
+    'section': '',
     'arguments': [],
     'password': ''
 }
@@ -37,6 +38,7 @@ The API accepts JSON requests and returns the response as JSON as well. The API 
 | `extension` | snake case formatted extension name                                           |
 | `template`  | relative template path name within a template root path, e.g. `Pages/Default` |
 | `partial`   | relative partial path name within a partial root path, e.g. `Atomics/Button`  |
+| `section`   | (optional) partial section name                                               |
 | `arguments` | (optional) arguments that will be made available for the template or partial  |
 | `password`  | password which is set in the extension settings                               |
 

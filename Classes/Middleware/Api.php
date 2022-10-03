@@ -97,12 +97,13 @@ class Api implements MiddlewareInterface
                 $requestBody['extension'],
                 $requestBody['template'],
                 $requestBody['partial'],
+                !empty($requestBody['section']) ? $requestBody['section'] : null,
                 !empty($requestBody['arguments']) ? $requestBody['arguments'] : []
             )
         ]);
     }
 
-    private function parseTemplate(String $extension, $template, $partial, $arguments)
+    private function parseTemplate(String $extension, $template, $partial, $section, $arguments)
     {
         $setup = $this->configurationManager->getConfiguration(
             ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT
@@ -126,7 +127,7 @@ class Api implements MiddlewareInterface
             $view->assignMultiple($arguments);
             $parsedTemplate = $view->render($template);
         } elseif (!empty($partial)) {
-            $parsedTemplate = $view->renderPartial($partial, null, $arguments);
+            $parsedTemplate = $view->renderPartial($partial, $section, $arguments);
         }
 
         return $parsedTemplate;
