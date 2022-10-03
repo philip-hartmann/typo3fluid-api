@@ -33,7 +33,7 @@ The API accepts JSON requests and returns the response as JSON as well. The API 
 }
 ```
 
-|             |                                                                               |
+| field       | description                                                                   |
 | ----------- | ----------------------------------------------------------------------------- |
 | `extension` | snake case formatted extension name                                           |
 | `template`  | relative template path name within a template root path, e.g. `Pages/Default` |
@@ -53,7 +53,7 @@ Either use `template` or `partial`.
 }
 ```
 
-|         |                                   |
+| field   | description                       |
 | ------- | --------------------------------- |
 | `data`  | rendered fluid template html code |
 | `error` | error message if available        |
