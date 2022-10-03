@@ -22,7 +22,7 @@ The API accepts JSON requests and returns the response as JSON as well. The API 
 
 ### Request
 
-```
+```json
 {
     'extension': '',
     'template': '',
@@ -46,7 +46,7 @@ Either use `template` or `partial`.
 
 ### Response
 
-```
+```json
 {
     'data': '',
     'error' ''
